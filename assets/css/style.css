@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-    background-color: #0b0a14;
+    background-color: #0185F8;
 }
 
 * {
@@ -38,7 +38,7 @@ h2 a {
 }
 
 
-.container {
+.gameStart-container {
     position: absolute;
     height: 200px;
     top: 50%;
@@ -61,11 +61,15 @@ h2 a {
 
 .btn {
     font-size: 24px;
-    text-shadow: 2px 2px #34eb55;
+    background-color: #fff;
+    border: none;
+    color: #000;
+    padding: 15px 32px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn:hover {
-    color: 	#34eb55;
     cursor: pointer;
 }
