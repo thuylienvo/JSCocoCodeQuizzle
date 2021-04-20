@@ -1,4 +1,4 @@
-let gameStartEl = document.querySelector('game-start-btn');
+let gameStartEl = document.querySelector('gamestartBtn');
 let highScoreEl = document.querySelector('highscore-btn');
 let timerEl = document.querySelector('#timer0');
 let scoreEl = document.querySelector('#score0')
@@ -33,6 +33,7 @@ let startScore = 60;
         document.getElementById("2").textContent=questions[0].choices[2];
         document.getElementById("3").textContent=questions[0].choices[3];
 
+        //
     }
 
 //Game questions run 

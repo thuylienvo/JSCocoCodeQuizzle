@@ -21,8 +21,9 @@ body {
 
 .beginGameDisplay {
     display: flex;
-    justify-content: space-between;
+    left: 20px;
 }
+
 
 #timer {
     position: absolute;
@@ -36,17 +37,19 @@ body {
     left: 10px;
 }
 
-#progressText {
+#gameStartDisplay {
     position: absolute;
-    top: 75px;
-    left: 40%;
+    top: 25%;
+    left: 35%;
 }
 
 #gameQuestions {
     position: absolute;
-    top: 50%;
-    left: 20%;
+    top: 30%;
+    left: 35%;
 }
 
-
+#question {
+    width: 60%;
+    text-align: center;
 }
