@@ -1,13 +1,3 @@
-var pos = 0; 
-var correct = 0;
-var question = "";
-var choice = "";
-var choices = "";
-var chA = "";
-var chB = "";
-var chC = "";
-var chD = "";
-
 // Quiz questions, choices and answer key
 
 var questions = [
@@ -58,65 +48,5 @@ var questions = [
             "d. toString()",
         ],
         answer: "a. unshift()",
-    },
-    {
-        question: "Which of the following function of String object causes a string to be displayed as struck-out text, as if it were in a <strike> tag?",
-        choices: [
-            "a. sup()",
-            "b. strike()",
-            "c. sub()",
-            "d. small()",
-        ],
-        answer: "b. strike()",
-    },
-    {
-        question: "Which of the following can't be done with client-side JavaScript?",
-        choices: [
-            "a. Validating a form",
-            "b. Sending a form's contents by email",
-            "c. Storing the form's contents to a database file on the server",
-            "d. None of the above",
-        ],
-        answer: "c. Storing the form's contents to a database file on the server",
-    },
-    {
-        question: "Which of the following function of String object creates a string to be displayed in a big font as if it were in a <big> tag?",
-        choices: [
-            "a. anchor()",
-            "b. blink()",
-            "c. italics()",
-            "d. big()",
-        ],
-        answer: "d. big()",
-    },
-    {
-        question: "______ tag is an extension to HTML that can enclose any number of JavaScript statements",
-        choices: [
-            "a. <SCRIPT>",
-            "b. <BODY>",
-            "c. <HEAD>",
-            "d. <TITLE>",
-        ],
-        answer: "a. <SCRIPT>",
-    },
-    {
-        question: "Which of the following type of variable is visible everywhere in your JavaScript code?",
-        choices: [
-            "a. global variable",
-            "b. local variable",
-            "c. Both of the above.",
-            "d. None of the above.",
-        ],
-        answer: "a. global variable",
-    },
-    {
-        question: "JavaScript entities start with _______ and end with _________.",
-        choices: [
-            "a. Semicolon, colon",
-            "b. Semicolon, Ampersand",
-            "c. Ampersand, colon",
-            "d. Ampersand, semicolon",
-        ],
-        answer: "d. Ampersand, semicolon",
     },
 ]
