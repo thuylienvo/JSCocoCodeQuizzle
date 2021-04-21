@@ -1,14 +1,19 @@
 //Start Game variables
-let gameStartEl = document.querySelector('gamestartBtn');
-let highScoreEl = document.querySelector('highscore-btn');
-let timerEl = document.querySelector('#timer0');
-let scoreEl = document.querySelector('#score0')
-let timeSeconds = 60;
-let startScore = 60;
+//const gameStartEl = document.querySelector('gamestartBtn');
+//const questionContainerEl = document.querySelector('question-container')
+const questionEl = document.querySelector('question');
+const choiceEL = document.querySelector('choice-btns');
+let randomQuestions, currentQuesIn
 
 
-//User selects Start to begin game 
-    //Timer will set off with score
+
+//User selects Start to begin game, timer and Q/As appear on pageload
+function startGame() {
+    randomQuestions = questions.sort(() => Math.random() - .5)
+    currentQuestion = 0
+    NextQuestion()
+} 
+    //Timer kicks off with 60 seconds 
     scoreEl.innerHTML = `${timeSeconds}`;
     timerEl.innerHTML = `00:${timeSeconds}`;
     const countDown = setInterval (()=>{
@@ -25,19 +30,22 @@ let startScore = 60;
         timerEl.innerHTML =`${min<10 ? '0': ''}${min}:${sec}`
         scoreEl.innerHTML =`${sec}`
     }
-    //And display question(s) and choice(s)
-    window.onload = function () {
-        console.log(questions[0])
-        document.getElementById("gameQuestions").textContent=questions[0].question;
-        document.getElementById("0").textContent=questions[0].choices[0].choice1;
-        document.getElementById("1").textContent=questions[0].choices[1].choice2;
-        document.getElementById("2").textContent=questions[0].choices[2].choice3;
-        document.getElementById("3").textContent=questions[0].choices[3].choice4;
-        
+
+    //Display random question and answer choices 
+    function nextQuestion() {
+        showQuestion(randomQuestions[currentQuesIn])
+    };
+
+    //Pull in question from array
+    function showQuestion(question) {
+        questionEl.innerText = question.question
+    }
+
+        //When a user selects a correct answer, do nothing
+    function selectAnswer() {
 
     }
 
-//Game questions run 
-
+        //If a user selects an incorrect answer, subtract 5 seconds off the clock
 
 

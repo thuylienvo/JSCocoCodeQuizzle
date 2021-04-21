@@ -1,6 +1,6 @@
 // Quiz questions, choices and answer key
 
-var questions = [
+const questions = [
     {
         question: "Which of the following is true about variable naming conventions in JavaScript?",
         choices: [
