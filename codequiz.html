@@ -7,27 +7,30 @@
     <title>Code Quiz Start</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/codequiz.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
     <div class="progressbar">
         <text id="score">Score: <text id=score0>0</text></text>
         <br>
         <text id="timer">Time: <text id=timer0>00:00</text></text>
+        <br><br>
+        <button class="highscoreBtn btn"> <a href="highscore.html">View High Scores </a></button>
     </div>   
     <div class="container">
         <div id="question-container" class="hide">
             <div id="gameQuestions">Question</div>
-            <div id="gameChoices" class="choice-btns">
-                <button class="cbtn">Choice 1</button>
+            <div id="gameChoices1" class="choice-btns">
+                <button onclick=selectAnswer(this.id) id="choice_1" class="cbtn">Choice 1</button>
             </div>
-            <div id="gameChoices" class="choice-btns">
-                <button class="cbtn">Choice 2</button>
+            <div id="gameChoices2" class="choice-btns">
+                <button onclick=selectAnswer(this.id) id="choice_2" class="cbtn">Choice 2</button>
             </div>
-            <div id="gameChoices" class="choice-btns">
-                <button class="cbtn">Choice 3</button>
+            <div id="gameChoices3" class="choice-btns">
+                <button onclick=selectAnswer(this.id) id="choice_3" class="cbtn">Choice 3</button>
             </div>
-            <div id="gameChoices" class="choice-btns">
-                <button class="cbtn">Choice 4</button>
+            <div id="gameChoices4" class="choice-btns">
+                <button onclick=selectAnswer(this.id) id="choice_4" class="cbtn">Choice 4</button>
             </div>
         </div>
     </div>

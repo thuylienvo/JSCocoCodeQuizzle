@@ -50,3 +50,9 @@ body {
     top: 15px;
     left: 10px;
 }
+
+.highscoreBtn {
+    position: absolute;
+    top: 80%;
+    left: 35%;
+}
