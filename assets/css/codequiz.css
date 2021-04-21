@@ -25,8 +25,7 @@ body {
 .choice-btns {
     display: grid;
     margin: 20px 0;
-    grid-template-columns: repeat(2, auto);
-    gap: 15px;
+    gap: 10px;
 }
 
 .cbtn {
