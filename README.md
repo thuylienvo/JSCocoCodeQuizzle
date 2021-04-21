@@ -18,6 +18,9 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 
+<img width="1223" alt="Screen Shot 2021-04-20 at 8 08 40 PM" src="https://user-images.githubusercontent.com/79684575/115482448-8da5ff80-a203-11eb-854a-2dc838289b5b.png">
+
+
 
 ## Installation
 No installation required, to access this application,
