@@ -19,7 +19,7 @@ body {
     transform: transform 100ms;
 }
 
-.beginGameDisplay {
+.progressbar {
     display: flex;
     left: 20px;
 }

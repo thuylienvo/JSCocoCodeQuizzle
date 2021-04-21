@@ -1,3 +1,4 @@
+//Start Game variables
 let gameStartEl = document.querySelector('gamestartBtn');
 let highScoreEl = document.querySelector('highscore-btn');
 let timerEl = document.querySelector('#timer0');
@@ -27,13 +28,13 @@ let startScore = 60;
     //And display question(s) and choice(s)
     window.onload = function () {
         console.log(questions[0])
-        document.getElementById("question").textContent=questions[0].question;
-        document.getElementById("0").textContent=questions[0].choices[0];
-        document.getElementById("1").textContent=questions[0].choices[1];
-        document.getElementById("2").textContent=questions[0].choices[2];
-        document.getElementById("3").textContent=questions[0].choices[3];
+        document.getElementById("gameQuestions").textContent=questions[0].question;
+        document.getElementById("0").textContent=questions[0].choices[0].choice1;
+        document.getElementById("1").textContent=questions[0].choices[1].choice2;
+        document.getElementById("2").textContent=questions[0].choices[2].choice3;
+        document.getElementById("3").textContent=questions[0].choices[3].choice4;
+        
 
-        //
     }
 
 //Game questions run 
